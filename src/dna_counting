@@ -1,0 +1,24 @@
+
+A, C, G, T = 0,0,0,0
+
+fas = open("../059.fasta","r")
+
+for line in fas:
+	if line.startswith(">"):
+		pass
+	else:
+		A += line.count("A")
+		C += line.count("C")
+		G += line.count("G")
+		T += line.count("T")
+
+print("A", A)
+print("C", C)
+print("G", G)
+print("T", T)
+
+fas.close()
+
+
+
+
